@@ -7,6 +7,7 @@ import Signup from "./view/Signup";
 import Dashboard from "./view/Dashboard";
 import DefaultLayout from "./component/DefaultLayout";
 import GuestLayout from "./component/GuestLayout";
+import Users from "./view/Users";
 
 
 const router = createBrowserRouter( [
@@ -16,7 +17,8 @@ const router = createBrowserRouter( [
 
     path: "/",
     element: <DefaultLayout/>,
-    children: [{
+    children: [
+        {
 
         path: "/",
         element: <Navigate to="/users" />
@@ -24,7 +26,12 @@ const router = createBrowserRouter( [
 
         path: "/dashboard",
         element: <Dashboard/>
-    }]
+    }, {
+
+        path: "/users",
+        element: <Users/>
+    }
+]
 },
 {
 // this secion is for users without authenticaiton
