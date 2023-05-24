@@ -1,8 +1,17 @@
 import React from 'react'
+import { useStateContext } from '../contexts/ContextProvider'
 
 function Users() {
+    const  {user,token}  =useStateContext()
+
+
   return (
-    <div>Users</div>
+    <>
+    <div>name {user.name}</div>
+    <div>email {user.email}</div>
+    <div>number {user.number}</div>
+    </>
+
   )
 }
 

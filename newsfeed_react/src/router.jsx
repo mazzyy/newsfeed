@@ -33,6 +33,7 @@ const router = createBrowserRouter( [
     }
 ]
 },
+
 {
 // this secion is for users without authenticaiton
     path: "/",
