@@ -39,7 +39,6 @@ const {setUser,setToken} = useStateContext();
           <div className="form">
             <form onSubmit={onSubmit}>
               <h1 className="title">Signup for Free</h1>
-
               <input  ref={nameRef} type="text" placeholder="Full Name"/>
               <input  ref={emailRef} type="email" placeholder="Email Address"/>
               <input  ref={passwordRef} type="password" placeholder="Password"/>
